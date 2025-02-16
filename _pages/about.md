@@ -6,11 +6,11 @@ subtitle: HKUST(GZ), China.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: hengyu.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     hengyumeng2002@gmail.com
-    
+
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,4 +26,8 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I am Hengyu Meng, a first-year MPhil student at the Hong Kong University of Science and Technology (Guangzhou), supervisied by Prof. Zeyu Wang in [CIS Lab](https://cislab.hkust-gz.edu.cn/). Before joining HKUST (GZ), I earned my bachelor's degree from South China University of Technology (SCUT) in 2024, focusing on game development, particularly for [SimulatorX](https://simulatorx.org/), a simulation platform for the RoboMaster robotics competition :robot:. Now, my research focuses on differential geometry for human-centric artificial intelligence-generated content (AIGC) and occasionally explores artistic applications :dizzy:.
+Hello! I am Hengyu Meng, a first-year MPhil student at the Hong Kong University of Science and Technology (Guangzhou), supervisied by Prof. Zeyu Wang in [CIS Lab](https://cislab.hkust-gz.edu.cn/). 
+
+Before joining HKUST (GZ), I earned my bachelor's degree from South China University of Technology (SCUT) in 2024, focusing on game development, particularly for [SimulatorX](https://simulatorx.org/), a simulation platform for the RoboMaster robotics competition :robot:. 
+
+Now, my research focuses on differential geometry for human-centric artificial intelligence-generated content (AIGC) and occasionally explores artistic applications :dizzy:.
