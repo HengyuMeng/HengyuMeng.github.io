@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     Earth is but a shell your form borrows for days,
-    the galaxy's silver streams where your soul sways :sparkles:.
+    the galaxy's silver streams where your soul sways.:sparkles:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
