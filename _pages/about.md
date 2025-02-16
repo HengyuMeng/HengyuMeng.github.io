@@ -5,12 +5,12 @@ permalink: /
 subtitle: HKUST(GZ), China.
 
 profile:
-  align: right
+  align: left
   image: hengyu.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    hengyumeng2002@gmail.com
-
+    Earth is but a shell your form borrows for days,
+    The galaxy's silver streams where your soul sways.
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
