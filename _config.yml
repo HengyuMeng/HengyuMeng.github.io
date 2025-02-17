@@ -264,8 +264,8 @@ terser:
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Hengyu]
-  first_name: [Meng]
+  last_name: [Meng]
+  first_name: [Hengyu]
 
   style: apa
   locale: en
