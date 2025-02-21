@@ -30,4 +30,4 @@ Hello! I am Hengyu Meng, a first-year MPhil student at the Hong Kong University 
 
 Before joining HKUST (GZ), I earned my bachelor's degree from South China University of Technology (SCUT) in 2024, focusing on game development, particularly for [SimulatorX](https://simulatorx.org/), a simulation platform for the RoboMaster robotics competition :robot:. 
 
-Now, my research focuses on differential geometry for human-centric artificial intelligence-generated content (AIGC) and occasionally explores artistic applications :dizzy:.
+My current research centers on differential geometry processing, 2D & 3D artificial intelligence-generated content (AIGC) and human-computer interaction (HCI). I also maintain an active interest in exploring artistic applications of computational technologies. :dizzy:.
