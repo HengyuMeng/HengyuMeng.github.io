@@ -47,5 +47,5 @@ email: hengyumeng2002@gmail.com # your email address
 # zotero_username: # your zotero username
 custom_social: # can be any name here other than the ones already defined above
   logo: github_logo_icon.png # can be png, svg, jpg
-  title: Github
+  # title: Github
   url: https://github.com/HengyuMeng
