@@ -107,13 +107,6 @@ ninja.data = [{
           window.open("mailto:%68%65%6E%67%79%75%6D%65%6E%67%32%30%30%32@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/HengyuMeng", "_blank");
-        },
-      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
