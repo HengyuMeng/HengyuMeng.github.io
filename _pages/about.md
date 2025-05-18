@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     Earth is but a shell your form borrows for days,
-    the galaxy's silver streams where your soul sways.:sparkles:
+    the galaxy's silver streams where your soul sways :sparkles: .
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,7 +26,7 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I am Hengyu Meng, a first-year MPhil student at the Hong Kong University of Science and Technology (Guangzhou), supervisied by Prof. Zeyu Wang in [CIS Lab](https://cislab.hkust-gz.edu.cn/). 
+Hello! I am Hengyu Meng, a first-year MPhil student at the Hong Kong University of Science and Technology (Guangzhou), supervisied by Prof. Zeyu Wang in [CIS Lab](https://cislab.hkust-gz.edu.cn/) and co-supervised by Prof. [Ligang Liu](http://staff.ustc.edu.cn/~lgliu/). 
 
 Before joining HKUST (GZ), I earned my bachelor's degree from South China University of Technology (SCUT) in 2024, focusing on game development, particularly for [SimulatorX](https://simulatorx.org/), a simulation platform for the RoboMaster robotics competition :robot:. 
 
