@@ -6,7 +6,7 @@ subtitle: HKUST(GZ), China.
 
 profile:
   align: right
-  image: hengyu.jpg
+  image: mhy_okasa.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     Earth is but a shell your form borrows for days,
