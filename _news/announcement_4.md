@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper accepted by [SIGGRAPH 2025 Art](https://s2025.siggraph.org/) !
+One art paper accepted by [SIGGRAPH 2025](https://s2025.siggraph.org/) !
