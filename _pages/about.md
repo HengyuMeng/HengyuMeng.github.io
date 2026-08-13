@@ -13,6 +13,7 @@ profile:
     the galaxy's silver streams where your soul sways.
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
+exhibitions: true # entries are managed in `_data/exhibitions.yml`
 social: true # includes social icons at the bottom of the page
 
 announcements:

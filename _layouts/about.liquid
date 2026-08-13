@@ -70,6 +70,14 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Exhibitions -->
+    {% if page.exhibitions %}
+      <h2>
+        <a href="{{ '/exhibitions/' | relative_url }}" style="color: inherit">exhibition</a>
+      </h2>
+      {% include exhibitions.liquid selected=true %}
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

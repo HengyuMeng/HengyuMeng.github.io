@@ -1,0 +1,74 @@
+{% assign exhibitions = site.data.exhibitions %}
+{% if include.selected %}
+  {% assign exhibitions = exhibitions | where: 'selected', true %}
+{% endif %}
+
+<div class="exhibitions publications">
+  {% if exhibitions and exhibitions.size > 0 %}
+    <ol class="exhibition-list">
+      {% for exhibition in exhibitions %}
+        <li>
+          <article class="row exhibition-item">
+            <div class="col col-sm-2 exhibition-preview-column">
+              {% if exhibition.image %}
+                {% assign exhibition_image_path = exhibition.image | prepend: '/assets/img/' %}
+                <img
+                  class="exhibition-preview z-depth-1 rounded"
+                  src="{{ exhibition_image_path | relative_url }}"
+                  alt="{{ exhibition.image_alt | default: exhibition.title | escape }}"
+                  loading="lazy"
+                >
+              {% else %}
+                <div class="exhibition-preview-placeholder rounded" aria-hidden="true">
+                  {{ exhibition.title | slice: 0, 1 }}
+                </div>
+              {% endif %}
+            </div>
+
+            <div class="col-sm-8 exhibition-content">
+              <div class="title">{{ exhibition.title }}</div>
+
+              {% if exhibition.artists %}
+                <div class="author">{{ exhibition.artists }}</div>
+              {% endif %}
+
+              <div class="periodical publication-venue-meta">
+                {% if exhibition.venue %}
+                  <span
+                    ><em>{{ exhibition.venue }}</em>
+                    {%- if exhibition.period %}, {{ exhibition.period }}{% endif -%}
+                  </span>
+                {% elsif exhibition.period %}
+                  <span>{{ exhibition.period }}</span>
+                {% endif %}
+                {% if exhibition.highlight %}
+                  <span class="publication-highlight publication-highlight-art">{{ exhibition.highlight }}</span>
+                {% endif %}
+              </div>
+
+              {% if exhibition.description %}
+                <div class="exhibition-description">{{ exhibition.description }}</div>
+              {% endif %}
+
+              {% if exhibition.website or exhibition.video or exhibition.catalog %}
+                <div class="links exhibition-links">
+                  {% if exhibition.website %}
+                    <a href="{{ exhibition.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+                  {% endif %}
+                  {% if exhibition.video %}
+                    <a href="{{ exhibition.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+                  {% endif %}
+                  {% if exhibition.catalog %}
+                    <a href="{{ exhibition.catalog }}" class="btn btn-sm z-depth-0" role="button">Catalog</a>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          </article>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p class="exhibition-empty">Exhibition works will be added soon.</p>
+  {% endif %}
+</div>

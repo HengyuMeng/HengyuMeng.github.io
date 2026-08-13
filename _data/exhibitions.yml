@@ -1,0 +1,22 @@
+# Exhibition content interface
+#
+# Add one block per artwork or exhibition. Entries are shown in this file's
+# order. Put images under assets/img/exhibition/.
+#
+# - title: Artwork or Exhibition Title
+#   artists: Hengyu Meng, Collaborator Name
+#   venue: Exhibition or Festival Name
+#   period: Jul 2026
+#   description: A concise description of the artwork, medium, or concept.
+#   image: exhibition/artwork-title.jpg
+#   image_alt: Artwork title shown at the exhibition
+#   highlight: Interactive Installation
+#   website: https://example.com
+#   video: https://example.com/video
+#   catalog: https://example.com/catalog.pdf
+#   selected: true
+#
+# selected: true shows the entry on both the homepage and /exhibitions/.
+# selected: false shows the entry only on /exhibitions/.
+
+[]

@@ -10,7 +10,7 @@
       tabindex="0"
       data-publication-tab="tech"
     >
-      Tech Papers
+      Technology
     </button>
     <button
       id="selected-art-hci-tab"
@@ -22,7 +22,7 @@
       tabindex="-1"
       data-publication-tab="art-hci"
     >
-      ART &amp; HCI Papers
+      ART &amp; HCI
     </button>
   </div>
 
@@ -34,7 +34,7 @@
       aria-labelledby="selected-tech-tab"
       data-publication-panel="tech"
     >
-      <h3 class="publication-category-title publication-fallback-title">Tech Papers</h3>
+      <h3 class="publication-category-title publication-fallback-title">Technology</h3>
       {% bibliography --group_by none --query @*[selected=true && paper_type=tech]* %}
     </section>
 
@@ -45,7 +45,7 @@
       aria-labelledby="selected-art-hci-tab"
       data-publication-panel="art-hci"
     >
-      <h3 class="publication-category-title publication-fallback-title">ART &amp; HCI Papers</h3>
+      <h3 class="publication-category-title publication-fallback-title">ART &amp; HCI</h3>
       {% bibliography --group_by none --query @*[selected=true && paper_type=art_hci]* %}
     </section>
   </div>

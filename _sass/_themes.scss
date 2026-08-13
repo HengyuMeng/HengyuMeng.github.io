@@ -29,6 +29,12 @@
   --global-newsletter-bg-color: #{$white-color};
   --global-newsletter-text-color: #{$black-color};
 
+  --morandi-sage: #66786e;
+  --morandi-rose: #846c68;
+  --morandi-slate: #6f7485;
+  --morandi-ochre: #806d58;
+  --morandi-label-text: #{$white-color};
+
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -98,6 +104,12 @@ html[data-theme="dark"] {
   --global-back-to-top-text-color: #{$black-color};
   --global-newsletter-bg-color: #{$grey-color-light};
   --global-newsletter-text-color: #{$grey-color-dark};
+
+  --morandi-sage: #9aaca0;
+  --morandi-rose: #b8a09b;
+  --morandi-slate: #a2a8ba;
+  --morandi-ochre: #c0aa8d;
+  --morandi-label-text: #202421;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

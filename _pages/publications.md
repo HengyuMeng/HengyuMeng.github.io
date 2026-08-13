@@ -16,12 +16,12 @@ nav_order: 2
 <div class="publications">
 
 <section class="publication-category" aria-labelledby="tech-papers">
-  <h2 id="tech-papers" class="publication-category-title">Tech Papers</h2>
+  <h2 id="tech-papers" class="publication-category-title">Technology</h2>
   {% bibliography --query @*[paper_type=tech]* %}
 </section>
 
 <section class="publication-category" aria-labelledby="art-hci-papers">
-  <h2 id="art-hci-papers" class="publication-category-title">ART &amp; HCI Papers</h2>
+  <h2 id="art-hci-papers" class="publication-category-title">ART &amp; HCI</h2>
   {% bibliography --query @*[paper_type=art_hci]* %}
 </section>
 
