@@ -11,4 +11,20 @@
 #   image_alt: Institution Name logo
 #   url: https://example.com
 
-[]
+- title: Tencent
+  # Logo source: https://www.tencent.com/newsroom/media-resources/logos/
+  period: Jun 2025 - Mar 2026
+  position: Research Intern
+  description: "Hosts: Dr. Yinda Ying, Dr. Lingting Zhu"
+  image: experience/tencent.png
+  image_alt: Tencent logo
+  url: https://www.tencent.com/
+
+- title: Hong Kong University of Science and Technology (Guangzhou)
+  # Logo source: https://studyathkustgz.hkust-gz.edu.cn/src/img/common/header_logo.png
+  period: Jun 2023 - Jun 2024
+  position: Research Assistant
+  description: "Hosts: Prof. Zeyu Wang"
+  image: experience/hkust-gz.png
+  image_alt: Hong Kong University of Science and Technology (Guangzhou) logo
+  url: https://hkust-gz.edu.cn/
