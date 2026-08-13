@@ -1,0 +1,14 @@
+# Experience content interface
+#
+# Add one block per internship or visiting experience. Entries are displayed in
+# this file's order. Images are read from assets/img/.
+#
+# - title: Institution Name
+#   period: Jun 2026 - Aug 2026
+#   position: Research Intern
+#   description: One sentence describing the team, project, or research topic.
+#   image: experience/institution-logo.png
+#   image_alt: Institution Name logo
+#   url: https://example.com
+
+[]

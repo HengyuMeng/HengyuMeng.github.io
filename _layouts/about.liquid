@@ -48,6 +48,12 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Experience -->
+    {% if page.experience and site.data.experiences and site.data.experiences.size > 0 %}
+      <h2>experience</h2>
+      {% include experience.liquid %}
+    {% endif %}
+
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
@@ -56,7 +62,7 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
+    <!-- Selected papers, grouped by paper_type in _bibliography/papers.bib -->
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>

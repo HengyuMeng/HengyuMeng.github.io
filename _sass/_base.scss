@@ -692,6 +692,123 @@ footer.sticky-bottom {
   }
 }
 
+// News and experience
+
+.news-scroll {
+  max-height: 16rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  padding-right: 0.35rem;
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 3px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--global-bg-color);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--global-divider-color);
+    border-radius: 999px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--global-theme-color);
+  }
+}
+
+.experience-list {
+  margin: 1rem 0 2rem;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:first-child {
+    padding-top: 0.25rem;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.experience-image {
+  display: flex;
+  flex: 0 0 112px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.experience-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 0.5rem;
+  background: var(--global-card-bg-color);
+  color: var(--global-theme-color);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.experience-content {
+  min-width: 0;
+}
+
+.experience-title {
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.experience-meta {
+  margin-top: 0.2rem;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+}
+
+.experience-description {
+  margin-top: 0.2rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 575px) {
+  .experience-item {
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+
+  .experience-image {
+    flex-basis: 76px;
+    height: 60px;
+  }
+
+  .experience-image-placeholder {
+    width: 56px;
+    height: 56px;
+    font-size: 1.35rem;
+  }
+}
+
 // Publications
 
 .publications {
@@ -719,6 +836,20 @@ footer.sticky-bottom {
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
+  }
+
+  .publication-category + .publication-category {
+    margin-top: 2.5rem;
+  }
+
+  .publication-category-title {
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-align: left;
   }
 
   ol.bibliography {

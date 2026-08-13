@@ -1,0 +1,39 @@
+{% if site.data.experiences and site.data.experiences.size > 0 %}
+  <div class="experience-list">
+    {% for experience in site.data.experiences %}
+      <article class="experience-item">
+        <div class="experience-image">
+          {% if experience.image %}
+            {% assign experience_image_path = experience.image | prepend: '/assets/img/' %}
+            <img
+              src="{{ experience_image_path | relative_url }}"
+              alt="{{ experience.image_alt | default: experience.title | escape }}"
+              loading="lazy"
+            >
+          {% else %}
+            <div class="experience-image-placeholder" aria-hidden="true">
+              {{ experience.title | slice: 0, 1 }}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="experience-content">
+          <div class="experience-title">
+            {% if experience.url %}
+              <a href="{{ experience.url }}" target="_blank" rel="noopener noreferrer">{{ experience.title }}</a>
+            {% else %}
+              {{ experience.title }}
+            {% endif %}
+          </div>
+          <div class="experience-meta">
+            {{ experience.period -}}
+            {%- if experience.position -%}
+              <span aria-hidden="true"> &middot; </span>{{ experience.position -}}
+            {%- endif %}
+          </div>
+          <div class="experience-description">{{ experience.description }}</div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+{% endif %}
