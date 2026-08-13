@@ -19,4 +19,12 @@
 # selected: true shows the entry on both the homepage and /exhibitions/.
 # selected: false shows the entry only on /exhibitions/.
 
-[]
+- title: Capillary Network
+  artists: Hanlu Ma, Hengyu Meng, Robert Jankowski, Jindu Wang, Tianrui Hu, Ziwei Wu
+  venue: Ars Electronica 2025
+  description: A data-driven interactive experience visualizing how poisonous substances diffuse across species and inviting reflection on human-nonhuman entanglement.
+  image: exhibition/capillary-network.jpg
+  image_alt: Capillary Network interactive installation at Ars Electronica 2025
+  highlight: Interactive Experience
+  website: https://ars.electronica.art/panic/en/view/capillary-network-20b38ddb450c81718a0cedba8767a617/
+  selected: true

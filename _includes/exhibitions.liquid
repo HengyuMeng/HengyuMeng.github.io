@@ -12,12 +12,12 @@
             <div class="col col-sm-2 exhibition-preview-column">
               {% if exhibition.image %}
                 {% assign exhibition_image_path = exhibition.image | prepend: '/assets/img/' %}
-                <img
+                {% assign exhibition_image_alt = exhibition.image_alt | default: exhibition.title %}
+                {%
+                  include figure.liquid loading="lazy" path=exhibition_image_path sizes="200px"
                   class="exhibition-preview z-depth-1 rounded"
-                  src="{{ exhibition_image_path | relative_url }}"
-                  alt="{{ exhibition.image_alt | default: exhibition.title | escape }}"
-                  loading="lazy"
-                >
+                  alt=exhibition_image_alt
+                %}
               {% else %}
                 <div class="exhibition-preview-placeholder rounded" aria-hidden="true">
                   {{ exhibition.title | slice: 0, 1 }}
