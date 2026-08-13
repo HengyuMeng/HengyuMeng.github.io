@@ -175,8 +175,17 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
+    <div class="periodical publication-venue-meta">
+      <span>{{ periodical | strip }}</span>
+      {% if entry.oral and entry.oral != 'false' %}
+        <span class="publication-highlight publication-highlight-oral">Oral</span>
+      {% endif %}
+      {% if entry.award_name %}
+        <span class="publication-highlight publication-highlight-award">{{ entry.award_name }}</span>
+      {% endif %}
+      {% if entry.highlight %}
+        <span class="publication-highlight">{{ entry.highlight }}</span>
+      {% endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}

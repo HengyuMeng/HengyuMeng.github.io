@@ -1,11 +1,52 @@
-<div class="publications">
-  <section class="publication-category" aria-labelledby="selected-tech-papers">
-    <h3 id="selected-tech-papers" class="publication-category-title">Tech Papers</h3>
-    {% bibliography --group_by none --query @*[selected=true && paper_type=tech]* %}
-  </section>
+<div class="publications selected-publications" data-selected-publications>
+  <div class="publication-tabs" role="tablist" aria-label="Selected publication categories" hidden>
+    <button
+      id="selected-tech-tab"
+      class="publication-tab is-active"
+      type="button"
+      role="tab"
+      aria-controls="selected-tech-papers"
+      aria-selected="true"
+      tabindex="0"
+      data-publication-tab="tech"
+    >
+      Tech Papers
+    </button>
+    <button
+      id="selected-art-hci-tab"
+      class="publication-tab"
+      type="button"
+      role="tab"
+      aria-controls="selected-art-hci-papers"
+      aria-selected="false"
+      tabindex="-1"
+      data-publication-tab="art-hci"
+    >
+      ART &amp; HCI Papers
+    </button>
+  </div>
 
-  <section class="publication-category" aria-labelledby="selected-art-hci-papers">
-    <h3 id="selected-art-hci-papers" class="publication-category-title">ART &amp; HCI Papers</h3>
-    {% bibliography --group_by none --query @*[selected=true && paper_type=art_hci]* %}
-  </section>
+  <div class="publication-tab-panels" data-publication-panels>
+    <section
+      id="selected-tech-papers"
+      class="publication-category publication-tab-panel is-active"
+      role="tabpanel"
+      aria-labelledby="selected-tech-tab"
+      data-publication-panel="tech"
+    >
+      <h3 class="publication-category-title publication-fallback-title">Tech Papers</h3>
+      {% bibliography --group_by none --query @*[selected=true && paper_type=tech]* %}
+    </section>
+
+    <section
+      id="selected-art-hci-papers"
+      class="publication-category publication-tab-panel"
+      role="tabpanel"
+      aria-labelledby="selected-art-hci-tab"
+      data-publication-panel="art-hci"
+    >
+      <h3 class="publication-category-title publication-fallback-title">ART &amp; HCI Papers</h3>
+      {% bibliography --group_by none --query @*[selected=true && paper_type=art_hci]* %}
+    </section>
+  </div>
 </div>

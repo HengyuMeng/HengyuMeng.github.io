@@ -26,7 +26,7 @@ Fields:
 - `image_alt`: accessible description of the image; recommended.
 - `url`: institution or lab URL; optional. When present, the title becomes a link.
 
-The data file is intentionally empty now, so no placeholder information is published. Experience automatically appears between News and Selected Publications after the first real entry is added.
+Experience appears between News and Selected Publications whenever `_data/experiences.yml` contains at least one entry.
 
 ## 2. News
 
@@ -52,7 +52,9 @@ Edit `_bibliography/papers.bib`. Every paper needs a `paper_type` field:
   author={...},
   year={2026},
   paper_type={tech},
-  selected={true}
+  selected={true},
+  oral={true},
+  award_name={Best Paper Honorable Mention Award}
 }
 ```
 
@@ -62,5 +64,8 @@ Fields:
 - `paper_type={art_hci}`: places the paper under **ART & HCI Papers**.
 - `selected={true}`: also shows the paper under **Selected Publications** on the homepage.
 - `selected={false}`, or no `selected` field: shows the paper only on the full Publications page.
+- `oral={true}`: displays a rounded **Oral** badge after the venue.
+- `award_name={...}`: displays the complete award name in a rounded highlighted badge.
+- `highlight={...}`: optional free-form badge for another distinction, such as an invited presentation.
 
 A paper without `paper_type` will not appear in either category. Existing papers have an initial classification based on their research topic; change only `paper_type` if you want to move one.
