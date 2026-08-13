@@ -5,7 +5,7 @@
 
 <div class="exhibitions publications">
   {% if exhibitions and exhibitions.size > 0 %}
-    <ol class="exhibition-list">
+    <ul class="exhibition-list">
       {% for exhibition in exhibitions %}
         <li>
           <article class="row exhibition-item">
@@ -29,7 +29,19 @@
               <div class="title">{{ exhibition.title }}</div>
 
               {% if exhibition.artists %}
-                <div class="author">{{ exhibition.artists }}</div>
+                {% assign exhibition_artists = exhibition.artists | split: ',' %}
+                <div class="author">
+                  {% for artist in exhibition_artists %}
+                    {% assign clean_artist = artist | strip %}
+                    {% assign normalized_artist = clean_artist | downcase %}
+                    {% unless forloop.first %},&nbsp;{% endunless %}
+                    {% if normalized_artist == 'hengyu meng' %}
+                      <em>{{ clean_artist }}</em>
+                    {% else %}
+                      {{ clean_artist }}
+                    {% endif %}
+                  {% endfor %}
+                </div>
               {% endif %}
 
               <div class="periodical publication-venue-meta">
@@ -67,7 +79,7 @@
           </article>
         </li>
       {% endfor %}
-    </ol>
+    </ul>
   {% else %}
     <p class="exhibition-empty">Exhibition works will be added soon.</p>
   {% endif %}

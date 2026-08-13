@@ -50,7 +50,7 @@ layout: default
 
     <!-- Experience -->
     {% if page.experience and site.data.experiences and site.data.experiences.size > 0 %}
-      <h2>experience</h2>
+      <h2>experiences</h2>
       {% include experience.liquid %}
     {% endif %}
 
@@ -73,7 +73,7 @@ layout: default
     <!-- Exhibitions -->
     {% if page.exhibitions %}
       <h2>
-        <a href="{{ '/exhibitions/' | relative_url }}" style="color: inherit">exhibition</a>
+        <a href="{{ '/exhibitions/' | relative_url }}" style="color: inherit">exhibitions</a>
       </h2>
       {% include exhibitions.liquid selected=true %}
     {% endif %}

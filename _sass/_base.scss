@@ -816,12 +816,13 @@ footer.sticky-bottom {
 .exhibitions {
   margin-top: 1.25rem;
 
-  ol.exhibition-list {
-    list-style: none;
+  .exhibition-list {
+    list-style: none !important;
     margin: 0;
     padding: 0;
 
     > li {
+      list-style: none;
       margin-bottom: 1.25rem;
     }
   }
@@ -856,10 +857,16 @@ footer.sticky-bottom {
   .exhibition-content {
     .title {
       font-weight: bolder;
+      text-transform: uppercase;
     }
 
     .author {
       margin-top: 0.1rem;
+
+      > em {
+        border-bottom: 1px solid;
+        font-style: normal;
+      }
     }
   }
 
