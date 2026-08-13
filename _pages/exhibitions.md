@@ -3,7 +3,8 @@ layout: page
 permalink: /exhibitions/
 title: exhibitions
 description: selected artworks, installations, and exhibitions.
-nav: false
+nav: true
+nav_order: 3
 ---
 
 <!-- _pages/exhibitions.md -->
