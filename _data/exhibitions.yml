@@ -19,6 +19,18 @@
 # selected: true shows the entry on both the homepage and /exhibitions/.
 # selected: false shows the entry only on /exhibitions/.
 
+
+
+- title: Becoming Space
+  artists: Xinyu Ma, Hengyu Meng
+  venue: Ars Electronica 2026
+  description: This sculpture and video installation explores human-animal transformation through Ovid’s Metamorphoses and Deleuze and Guattari’s concept of “becoming-animal.” Using generative AI and 3D printing, agency is distributed across algorithms, text, machines and matter, creating a non-human approach to becoming.
+  image: exhibition/becoming-space.png
+  image_alt: Becoming Space at Ars Electronica 2026
+  highlight: Generative Art
+  website: https://ars.electronica.art/negotiatinghumanity/en/view/becoming-space-38238ddb450c8110af78ef62cc52017d/
+  selected: true
+
 - title: Capillary Network
   artists: Hanlu Ma, Hengyu Meng, Robert Jankowski, Jindu Wang, Tianrui Hu, Ziwei Wu
   venue: Ars Electronica 2025
